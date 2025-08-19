@@ -1,0 +1,159 @@
+p {
+  text-align: justify;
+}
+
+/* Style for author name */
+.author {
+  font-size: 1.5em;        /* slightly larger font */
+  color: #2a7ae2;          /* blue shade */
+  font-weight: bold;       /* bold */
+  text-align: right;      /* center the author name */
+  margin-top: 10px;        /* space above */
+  font-style: italic;
+
+}
+
+/* Style for date */
+.date {
+  font-size: 1em;
+  color: #555555;          /* gray shade */
+  font-style: italic;      /* italic style */
+  text-align: right;      /* center the date */
+  margin-bottom: 20px;     /* space below */
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: left;
+}
+
+thead th {
+  padding: 12px 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f7f4;
+}
+
+tbody td {
+  padding: 12px 15px;
+}
+
+tfoot {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+tfoot td {
+  padding: 12px 15px;
+}
+
+/*Chapter 1*/
+
+/* Base heading styles */
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;     /* bold and impactful */
+  letter-spacing: 1px;
+  margin: 1.5em 0 0.75em;
+  line-height: 1.2;
+  color: #222;
+}
+
+/* Font sizes */
+h1 { font-size: 2.5rem; }   /* roughly 40px */
+h2 { font-size: 2rem; }     /* roughly 32px */
+h3 { font-size: 1.5rem; }   /* roughly 24px */
+
+/* Center-aligned h1 with decorative lines */
+h1.center-decor {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+h1.center-decor:before,
+h1.center-decor:after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  background: #ccc;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+/* Gradient and shadow for h2 */
+h2.gradient {
+  background: linear-gradient(to right, #ff5f00, #fea26d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+h2.gradient:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 50px;
+  height: 4px;
+  background: #ff5f00;
+  transform: translateX(-50%);
+}
+
+/* Boxed subheading for h3 */
+h3.boxed {
+  background: #eee;
+  padding: 0.5em 1em;
+  border-left: 4px solid #990000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.tree {
+  font-family: "Courier New", Courier, monospace; /* fixed-width for alignment */
+  border: 1px solid #ddd;       /* subtle border */
+  border-radius: 8px;           /* rounded corners */
+  padding: 16px 20px;           /* space around */
+  white-space: pre;             /* keep spaces & line breaks */
+  line-height: 1.4;             /* spacing between lines */
+  color: #333;                  /* text color */
+
+}
+
+
+.tree .highlight {
+  font-weight: bold;
+  color: red;
+}
+.tree br {
+  display: none; /* we'll let white-space handle line breaks */
+}
+
+.results{
+  background: #BBDCE5;
+  width:100%;
+}

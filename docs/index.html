@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>NMHS_APP</title>
+  <meta name="description" content="Documentation for the NMHS_APP project" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="NMHS_APP" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Documentation for the NMHS_APP project" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="NMHS_APP" />
+  
+  <meta name="twitter:description" content="Documentation for the NMHS_APP project" />
+  
+
+<meta name="author" content="Deepan P" />
+
+
+<meta name="date" content="2024-09-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="cluster-selection-in-rural-areas.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/codefolding-lua-1.1/codefolding-lua.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><strong>Introduction</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html"><i class="fa fa-check"></i><strong>Cluster selection in Rural areas</strong></a>
+<ul>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#file-structure"><i class="fa fa-check"></i>File structure</a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#functions"><i class="fa fa-check"></i>Functions</a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#program-flow-chart"><i class="fa fa-check"></i>Program Flow chart</a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#overview"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#phase-1-data-collection-and-consolidation-first-pass"><i class="fa fa-check"></i><strong>PHASE 1: Data Collection and Consolidation</strong> <br>(First Pass)</a>
+<ul>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#purpose"><i class="fa fa-check"></i>Purpose</a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#detailed-procedures"><i class="fa fa-check"></i>Detailed Procedures</a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#phase-1-output"><i class="fa fa-check"></i>Phase 1 Output</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#phase-2-proportional-analysis-and-sampling-preparation"><i class="fa fa-check"></i><strong>PHASE 2: Proportional Analysis and Sampling Preparation</strong></a>
+<ul>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#purpose-1"><i class="fa fa-check"></i>Purpose</a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#detailed-procedures-1"><i class="fa fa-check"></i>Detailed Procedures</a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#phase-2-output"><i class="fa fa-check"></i>Phase 2 Output</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#phase-3-systematic-sampling-and-results-generation-second-pass"><i class="fa fa-check"></i><strong>PHASE 3: Systematic Sampling and Results Generation (Second Pass)</strong></a>
+<ul>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#purpose-2"><i class="fa fa-check"></i>Purpose</a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-rural-areas.html"><a href="cluster-selection-in-rural-areas.html#detailed-procedures-2"><i class="fa fa-check"></i>Detailed Procedures</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html"><i class="fa fa-check"></i><strong>Cluster selection in Urban areas</strong></a>
+<ul>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#program-flow-chart-1"><i class="fa fa-check"></i><strong>Program Flow chart</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#import-libraries-and-utility-functions"><i class="fa fa-check"></i><strong>Import Libraries and Utility Functions</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#data-download-and-initial-processing"><i class="fa fa-check"></i><strong>Data Download and Initial Processing</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#district-selection-and-filtering"><i class="fa fa-check"></i><strong>District Selection and Filtering</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#exclusion-logic"><i class="fa fa-check"></i><strong>Exclusion Logic</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#cluster-calculation-and-proportional-allocation"><i class="fa fa-check"></i><strong>Cluster Calculation and Proportional Allocation</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#utility-functions-for-report-generation"><i class="fa fa-check"></i><strong>Utility Functions for Report Generation</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#result-summary-and-sampling-preparation"><i class="fa fa-check"></i><strong>Result Summary and Sampling Preparation</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#random-cluster-sampling-implementation"><i class="fa fa-check"></i><strong>Random Cluster Sampling Implementation</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#geographic-coordinate-assignment-geocoding"><i class="fa fa-check"></i><strong>Geographic Coordinate Assignment (Geocoding)</strong></a></li>
+<li class="chapter" data-level="" data-path="cluster-selection-in-urban-areas.html"><a href="cluster-selection-in-urban-areas.html#output-generation-and-final-documentation"><i class="fa fa-check"></i><strong>Output Generation and Final Documentation</strong></a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><strong>NMHS_APP</strong></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title"><strong>NMHS_APP</strong></h1>
+<p class="author"><em>Deepan P</em></p>
+<p class="date"><em>2024-09-14</em></p>
+</div>
+<div id="introduction" class="section level1 hasAnchor">
+<h1><strong>Introduction</strong><a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Due to time constraints, there was an immediate need for clean and accurate sample selection from a high-volume dataset. This requirement led to the development of this application. Sampling had to be carried out for all the States and Union Territories, further stratified into <strong>Rural</strong> and <strong>Urban</strong> segments, as per the sampling strategy flowchart shown below.</p>
+<p><br></p>
+<div style="text-align: center;">
+  <img src="sampling_flowchart.png" width="654" alt="The overall study design">
+  <p style="font-style: italic; font-weight: bold; text-align: center; margin-top:10px ">
+    The overall study design
+  </p>
+</div>
+<p><br></p>
+<p>For a specific State, once the districts where the survey is to be conducted are finalized:</p>
+<ul>
+<li><p><strong>For the Rural population:</strong><br />
+The list of <strong>Gram Panchayats (GP)</strong> under each selected district was obtained from the <strong>Jal Jeevan Mission</strong> portal (<a href="https://ejalshakti.gov.in/JJM/JJMReports/BasicInformation/JJMRep_RWS_RuralPopulation.aspx">JJM Reports</a>), which provides projected population sizes of SC, ST, and General categories based on the 2011 census. The issue with the JJM reports was that the GP data was provided as separate spreadsheets (.xls) at the development block level according to the administrative system, rather than as a single list for each district. Therefore, the first phase of GP selection involves merging several block‑level data files into one consolidated list using the function <code style="color:red;">TableCooker</code> of <strong>PPS.xlsm</strong>, in order to obtain the projected total rural population of each selected district within a state for calculating the number of clusters and Probability proportional size was adopted for the allocation of number of clusters on each district.Probability Proportional to Size (PPS) was then adopted for allocating the number of clusters to each district.</p></li>
+<li><p><strong>For the Urban population:</strong><br />
+According to the study design, the Urban population was further divided into <strong>Million Plus (MP)</strong> and <strong>Non‑Million Plus (NMP)</strong> cities. The application was developed to handle only NMP cities, while MP cities were managed manually without any automation. Therefore, this documentation focuses solely on the NMP cities. Sampling was carried out using <strong>Urban Frame Sampling (UFS)</strong> block‑level data obtained from the Ministry of Statistics and Programme Implementation website (<a href="https://mospi.gov.in/ufs-metadata">UFS metadata</a>), which provides state‑wise UFS block data. The important definitions related the UFS metadata is provided in the below PDF (pg.no: 2).</p></li>
+</ul>
+<p><br><br></p>
+<div style="text-align: center;">
+<iframe src="UFS.pdf" width="80%" height="400px">
+</iframe>
+</div>
+<br><br>
+<div align="center">
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition (Summary)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>House</strong></td>
+<td>Any structure, tent, or shelter used for residential, non‑residential, or both purposes; it may also be vacant.</td>
+</tr>
+<tr class="even">
+<td><strong>Household</strong></td>
+<td>A group of people normally living together and sharing a common kitchen; members may or may not be related by blood.</td>
+</tr>
+<tr class="odd">
+<td><strong>Block</strong></td>
+<td>The ultimate unit of enumeration in UFS; a compact area bounded by natural or permanent landmarks. Each typically contains ~120–150 households. A block is bounded by well‑defined, clear‑cut, natural boundaries to the extent possible. Blocks are mutually exclusive and exhaustive, so that all blocks in a town together cover the town’s total area. <strong>(Equivalent to a village in rural areas)</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Investigator Unit (IV Unit)</strong></td>
+<td>An intermediate unit between a town and its blocks; consists of ~20–40 UFS blocks and, where available, follows ward boundaries. <strong>(Equivalent to a Gram Panchayat in rural areas)</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p>Each district in the urban scenario has several IV units, similar to Gram Panchayats (GP) in rural areas. However, as per the definitions above, in reality some IV units were not valid—i.e., in certain cases, we found IV units with fewer than 20 UFS blocks. Hence, these IV units were excluded when preparing the number of IV units for each district during the PPS calculation and cluster allocation process.</p>
+<p>On the other hand, in some cases, the exclusion of IV units due to an insufficient number of UFS blocks led to the exclusion of an entire selected district especially in NMP cites. This serious issue was managed by slightly tweaking the program: in such cases, the “excluder” was turned off, allowing clusters to be selected repeatedly from the same limited IV units. <strong>In other cases, the rule was maintained—choosing only one cluster (i.e., UFS blocks) from which 25 adults and 10 adolescents would be selected in each cluster, similar to the approach used in villages, which serve as clusters in rural areas.</strong></p>
+<p>To address the infeasibility caused by the identification of ST populations in rural scenario and inaccessible UFS blocks in urban scenario or not able to achieve the target of 25 adults and 10 adolescents, more than one selection list (i.e., 3) of clusters was provided to the field data collectors. They were instructed to follow only one list under normal circumstances and use the other list in exceptional situations. they can use the other list to choose another cluster belong to the same Gram Panchayat or IV unit.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="cluster-selection-in-rural-areas.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
