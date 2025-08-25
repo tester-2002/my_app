@@ -1,0 +1,7 @@
+bookdown::gitbook:
+  css: styles.css
+  table_css: false
+  number_sections: false
+  code_folding: hide
+bookdown::pdf_book:
+  keep_tex: yes

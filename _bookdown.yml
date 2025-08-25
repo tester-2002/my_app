@@ -1,0 +1,5 @@
+rmd_files:
+  - "index.Rmd"
+  - "01-Rural_sampling.Rmd"
+  - "02-Urban_sampling.Rmd"
+output_dir: "docs"
